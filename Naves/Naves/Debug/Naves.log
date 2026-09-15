@@ -1,2 +1,23 @@
-﻿  GameLayer.cpp
+﻿  Actor.cpp
+C:\Users\uo300006\source\repos\Naves\Naves\Actor.cpp(7,12): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\uo300006\source\repos\Naves\Naves\Actor.cpp(8,12): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+  Background.cpp
+  Enemy.cpp
+C:\Users\uo300006\source\repos\Naves\Naves\Enemy.cpp(11,8): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+  Game.cpp
+C:\Users\uo300006\source\repos\Naves\Naves\Game.cpp(61,56): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\uo300006\source\repos\Naves\Naves\Game.cpp(61,35): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+  GameLayer.cpp
+C:\Users\uo300006\source\repos\Naves\Naves\GameLayer.cpp(133,35): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\uo300006\source\repos\Naves\Naves\GameLayer.cpp(133,31): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+  Layer.cpp
+  Main.cpp
+  Player.cpp
+C:\Users\uo300006\source\repos\Naves\Naves\Player.cpp(12,8): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\uo300006\source\repos\Naves\Naves\Player.cpp(13,8): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\uo300006\source\repos\Naves\Naves\Player.cpp(27,28): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\uo300006\source\repos\Naves\Naves\Player.cpp(27,25): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+  Projectile.cpp
+C:\Users\uo300006\source\repos\Naves\Naves\Projectile.cpp(9,8): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+  Generando código...
   Naves.vcxproj -> C:\Users\uo300006\source\repos\Naves\Debug\Naves.exe

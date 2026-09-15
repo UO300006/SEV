@@ -18,6 +18,8 @@ public:
 	void draw() override;
 	void keysToControls(SDL_Event event);
 
+	int newEnemyTime = 0;
+
 	Player* player;
 	Background* background;
 	bool controlShoot = false;

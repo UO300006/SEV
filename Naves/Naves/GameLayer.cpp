@@ -7,8 +7,17 @@ GameLayer::GameLayer(Game* game)
 }
 
 void GameLayer::init() {
+	audioBackground = Audio::createAudio("res/musica_ambiente.mp3", true);
+	audioBackground->play();
+
+	points = 0;
+	textPoints = new Text("hola", WIDTH * 0.92, HEIGHT * 0.04, game);
+	textPoints->content = to_string(points);
+
 	player = new Player(50, 50, game);
-	background = new Background("res/fondo.png", WIDTH * 0.5, HEIGHT * 0.5, game);
+	background = new Background("res/fondo.png", WIDTH * 0.5, HEIGHT * 0.5, -1, game);
+	backgroundPoints = new Actor("res/icono_puntos.png",
+		WIDTH * 0.85, HEIGHT * 0.05, 24, 24, game);
 
 	projectiles.clear(); // Vaciar por si reiniciamos el juego
 
@@ -125,6 +134,7 @@ void GameLayer::keysToControls(SDL_Event event) {
 
 
 void GameLayer::update() {
+	background->update();
 	// Generar enemigos
 	newEnemyTime--;
 	if (newEnemyTime <= 0) {
@@ -155,6 +165,19 @@ void GameLayer::update() {
 	list<Enemy*> deleteEnemies;
 	list<Projectile*> deleteProjectiles;
 
+	for (auto const& projectile : projectiles) {
+		if (projectile->isInRender() == false) {
+
+			bool pInList = std::find(deleteProjectiles.begin(),
+				deleteProjectiles.end(),
+				projectile) != deleteProjectiles.end();
+
+			if (!pInList) {
+				deleteProjectiles.push_back(projectile);
+			}
+		}
+	}
+
 	for (auto const& enemy : enemies) {
 		for (auto const& projectile : projectiles) {
 			if (enemy->isOverlap(projectile)) {
@@ -173,6 +196,9 @@ void GameLayer::update() {
 				if (!eInList) {
 					deleteEnemies.push_back(enemy);
 				}
+				points++;
+				textPoints->content = to_string(points);
+
 			}
 		}
 	}
@@ -184,6 +210,7 @@ void GameLayer::update() {
 
 	for (auto const& delProjectile : deleteProjectiles) {
 		projectiles.remove(delProjectile);
+		delete delProjectile;
 	}
 	deleteProjectiles.clear();
 
@@ -201,6 +228,8 @@ void GameLayer::draw() {
 	for (auto const& enemy : enemies) {
 		enemy->draw();
 	}
+	textPoints->draw();
+	backgroundPoints->draw();
 
 	SDL_RenderPresent(game->renderer); // Renderiza
 }

@@ -1,0 +1,25 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Professional\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(538,5): warning MSB8028: El directorio intermedio (Debug\) contiene archivos compartidos de otro proyecto (Naves.vcxproj). Esto puede dar lugar a un comportamiento incorrecto de limpieza y recompilación.
+  Enemy.cpp
+C:\Users\uo300006\Desktop\SEV_Naves\Plataformas\Naves\Enemy.cpp(7,57): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\uo300006\Desktop\SEV_Naves\Plataformas\Naves\Enemy.cpp(7,50): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\uo300006\Desktop\SEV_Naves\Plataformas\Naves\Enemy.cpp(12,63): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\uo300006\Desktop\SEV_Naves\Plataformas\Naves\Enemy.cpp(12,56): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\uo300006\Desktop\SEV_Naves\Plataformas\Naves\Enemy.cpp(40,9): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\uo300006\Desktop\SEV_Naves\Plataformas\Naves\Enemy.cpp(46,21): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\uo300006\Desktop\SEV_Naves\Plataformas\Naves\Enemy.cpp(46,18): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+  Game.cpp
+C:\Users\uo300006\Desktop\SEV_Naves\Plataformas\Naves\Audio.h(8,10): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
+  (compilando archivo de origen "Game.cpp")
+  
+C:\Users\uo300006\Desktop\SEV_Naves\Plataformas\Naves\Game.cpp(65,56): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\uo300006\Desktop\SEV_Naves\Plataformas\Naves\Game.cpp(65,35): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+  GameLayer.cpp
+C:\Users\uo300006\Desktop\SEV_Naves\Plataformas\Naves\Audio.h(8,10): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
+  (compilando archivo de origen "GameLayer.cpp")
+  
+C:\Users\uo300006\Desktop\SEV_Naves\Plataformas\Naves\GameLayer.cpp(14,53): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\uo300006\Desktop\SEV_Naves\Plataformas\Naves\GameLayer.cpp(14,38): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\uo300006\Desktop\SEV_Naves\Plataformas\Naves\GameLayer.cpp(143,35): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\uo300006\Desktop\SEV_Naves\Plataformas\Naves\GameLayer.cpp(143,31): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+  Generando código...
+  Naves.vcxproj -> C:\Users\uo300006\Desktop\SEV_Naves\Plataformas\Debug\Plataformas.exe

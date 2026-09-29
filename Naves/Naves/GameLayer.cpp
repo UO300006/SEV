@@ -179,6 +179,7 @@ void GameLayer::update() {
 		if (player->isOverlap(coin)) {
 			deleteCoins.push_back(coin);
 			points += coin->points;
+			textPoints->content = to_string(points);
 		}
 	}
 	for (auto const& delCoin : deleteCoins) {
@@ -253,6 +254,10 @@ void GameLayer::draw() {
 	player->draw();
 	for (auto const& enemy : enemies) {
 		enemy->draw();
+	}
+
+	for (auto const& coin : coins) {
+		coin->draw();
 	}
 	textPoints->draw();
 	backgroundPoints->draw();

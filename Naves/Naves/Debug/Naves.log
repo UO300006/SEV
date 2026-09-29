@@ -1,1 +1,13 @@
-﻿C:\Program Files\Microsoft Visual Studio\18\Community\MSBuild\Microsoft\VC\v180\Microsoft.CppBuild.targets(473,5): error MSB8020: No se pueden encontrar las herramientas de compilación para Visual Studio 2022 (Conjunto de herramientas de la plataforma = 'v143'). Para compilar con las herramientas de compilación v143, instale las herramientas de compilación Visual Studio 2022. También puede actualizar a las herramientas actuales de Visual Studio. Para ello, seleccione el menú Proyecto o haga clic con el botón secundario en la solución y, a continuación, seleccione "Actualizar solución".
+﻿  GameLayer.cpp
+C:\Users\iyanp\Desktop\CuartoCarrera\SEV\Naves\Naves\Audio.h(8,10): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
+  (compilando archivo de origen "GameLayer.cpp")
+  
+C:\Users\iyanp\Desktop\CuartoCarrera\SEV\Naves\Naves\GameLayer.cpp(14,53): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\iyanp\Desktop\CuartoCarrera\SEV\Naves\Naves\GameLayer.cpp(14,38): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\iyanp\Desktop\CuartoCarrera\SEV\Naves\Naves\GameLayer.cpp(32,34): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\iyanp\Desktop\CuartoCarrera\SEV\Naves\Naves\GameLayer.cpp(32,27): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\iyanp\Desktop\CuartoCarrera\SEV\Naves\Naves\GameLayer.cpp(148,32): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\iyanp\Desktop\CuartoCarrera\SEV\Naves\Naves\GameLayer.cpp(148,28): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\iyanp\Desktop\CuartoCarrera\SEV\Naves\Naves\GameLayer.cpp(156,38): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\iyanp\Desktop\CuartoCarrera\SEV\Naves\Naves\GameLayer.cpp(156,31): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+  Naves.vcxproj -> C:\Users\iyanp\Desktop\CuartoCarrera\SEV\Naves\Debug\Naves.exe

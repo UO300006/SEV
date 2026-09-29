@@ -13,7 +13,7 @@ Actor::Actor(string filename, float x, float y, int width, int height, Game* gam
 	this->height = height;
 }
 
-void Actor::draw() {
+void Actor::draw(float scrollX) {
 	// Recorte en el fichero de la imagen
 	SDL_Rect source;
 	source.x = 0;
@@ -22,7 +22,7 @@ void Actor::draw() {
 	source.h = fileHeight; // texture.height;
 	// Donde se va a pegar en el renderizador
 	SDL_Rect destination;
-	destination.x = x - width / 2;
+	destination.x = x - width / 2 - scrollX;
 	destination.y = y - height / 2;
 	destination.w = width;
 	destination.h = height;
@@ -44,13 +44,14 @@ bool Actor::isOverlap(Actor* actor) {
 	return overlap;
 }
 
-bool Actor::isInRender() {
-	if (x - width / 2 <= WIDTH && x + width / 2 >= 0 &&
+bool Actor::isInRender(float scrollX) {
+	if ((x - scrollX) - width / 2 <= WIDTH && (x - scrollX) + width / 2 >= 0 &&
 		y - height / 2 <= HEIGHT && y + height / 2 >= 0) {
 		return true;
 	}
 	return false;
 }
+
 
 Actor::~Actor() {
 }

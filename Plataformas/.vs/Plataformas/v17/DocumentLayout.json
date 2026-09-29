@@ -1,0 +1,279 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\uo300006\\Desktop\\SEV\\Plataformas\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|C:\\Users\\uo300006\\Desktop\\SEV\\Plataformas\\Naves\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|solutionrelative:Naves\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|C:\\Users\\uo300006\\Desktop\\SEV\\Plataformas\\Naves\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|solutionrelative:Naves\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|C:\\Users\\uo300006\\Desktop\\SEV\\Plataformas\\Naves\\Actor.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|solutionrelative:Naves\\Actor.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|C:\\Users\\uo300006\\Desktop\\SEV\\Plataformas\\Naves\\GameLayer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|solutionrelative:Naves\\GameLayer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|C:\\Users\\uo300006\\Desktop\\SEV\\Plataformas\\Naves\\Enemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|solutionrelative:Naves\\Enemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|C:\\Users\\uo300006\\Desktop\\SEV\\Plataformas\\Naves\\Enemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|solutionrelative:Naves\\Enemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|C:\\Users\\uo300006\\Desktop\\SEV\\Plataformas\\Naves\\Projectile.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|solutionrelative:Naves\\Projectile.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|C:\\Users\\uo300006\\Desktop\\SEV\\Plataformas\\Naves\\Space.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|solutionrelative:Naves\\Space.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|C:\\Users\\uo300006\\Desktop\\SEV\\Plataformas\\Naves\\Tile.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|solutionrelative:Naves\\Tile.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|C:\\Users\\uo300006\\Desktop\\SEV\\Plataformas\\Naves\\Space.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|solutionrelative:Naves\\Space.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|C:\\Users\\uo300006\\Desktop\\SEV\\Plataformas\\Naves\\GameLayer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|solutionrelative:Naves\\GameLayer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|C:\\Users\\uo300006\\Desktop\\SEV\\Plataformas\\Naves\\Actor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|solutionrelative:Naves\\Actor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|C:\\Users\\uo300006\\Desktop\\SEV\\Plataformas\\Naves\\Background.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|solutionrelative:Naves\\Background.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|C:\\Users\\uo300006\\Desktop\\SEV\\Plataformas\\Naves\\Background.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|solutionrelative:Naves\\Background.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|C:\\Users\\uo300006\\Desktop\\SEV\\Plataformas\\Naves\\Tile.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|solutionrelative:Naves\\Tile.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GameLayer.cpp",
+              "DocumentMoniker": "C:\\Users\\uo300006\\Desktop\\SEV\\Plataformas\\Naves\\GameLayer.cpp",
+              "RelativeDocumentMoniker": "Naves\\GameLayer.cpp",
+              "ToolTip": "C:\\Users\\uo300006\\Desktop\\SEV\\Plataformas\\Naves\\GameLayer.cpp",
+              "RelativeToolTip": "Naves\\GameLayer.cpp",
+              "ViewState": "AgIAAIAAAAAAAAAAAAAiwJ0AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-09-29T13:49:55.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Enemy.cpp",
+              "DocumentMoniker": "C:\\Users\\uo300006\\Desktop\\SEV\\Plataformas\\Naves\\Enemy.cpp",
+              "RelativeDocumentMoniker": "Naves\\Enemy.cpp",
+              "ToolTip": "C:\\Users\\uo300006\\Desktop\\SEV\\Plataformas\\Naves\\Enemy.cpp",
+              "RelativeToolTip": "Naves\\Enemy.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-09-29T13:46:44.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Player.h",
+              "DocumentMoniker": "C:\\Users\\uo300006\\Desktop\\SEV\\Plataformas\\Naves\\Player.h",
+              "RelativeDocumentMoniker": "Naves\\Player.h",
+              "ToolTip": "C:\\Users\\uo300006\\Desktop\\SEV\\Plataformas\\Naves\\Player.h",
+              "RelativeToolTip": "Naves\\Player.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-09-29T13:50:07.344Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Player.cpp",
+              "DocumentMoniker": "C:\\Users\\uo300006\\Desktop\\SEV\\Plataformas\\Naves\\Player.cpp",
+              "RelativeDocumentMoniker": "Naves\\Player.cpp",
+              "ToolTip": "C:\\Users\\uo300006\\Desktop\\SEV\\Plataformas\\Naves\\Player.cpp",
+              "RelativeToolTip": "Naves\\Player.cpp",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAFQAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-09-29T13:50:24.408Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Actor.h",
+              "DocumentMoniker": "C:\\Users\\uo300006\\Desktop\\SEV\\Plataformas\\Naves\\Actor.h",
+              "RelativeDocumentMoniker": "Naves\\Actor.h",
+              "ToolTip": "C:\\Users\\uo300006\\Desktop\\SEV\\Plataformas\\Naves\\Actor.h",
+              "RelativeToolTip": "Naves\\Actor.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-09-29T13:46:02.708Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Enemy.h",
+              "DocumentMoniker": "C:\\Users\\uo300006\\Desktop\\SEV\\Plataformas\\Naves\\Enemy.h",
+              "RelativeDocumentMoniker": "Naves\\Enemy.h",
+              "ToolTip": "C:\\Users\\uo300006\\Desktop\\SEV\\Plataformas\\Naves\\Enemy.h",
+              "RelativeToolTip": "Naves\\Enemy.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-09-29T13:46:34.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Projectile.cpp",
+              "DocumentMoniker": "C:\\Users\\uo300006\\Desktop\\SEV\\Plataformas\\Naves\\Projectile.cpp",
+              "RelativeDocumentMoniker": "Naves\\Projectile.cpp",
+              "ToolTip": "C:\\Users\\uo300006\\Desktop\\SEV\\Plataformas\\Naves\\Projectile.cpp",
+              "RelativeToolTip": "Naves\\Projectile.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-09-29T14:12:49.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Space.cpp",
+              "DocumentMoniker": "C:\\Users\\uo300006\\Desktop\\SEV\\Plataformas\\Naves\\Space.cpp",
+              "RelativeDocumentMoniker": "Naves\\Space.cpp",
+              "ToolTip": "C:\\Users\\uo300006\\Desktop\\SEV\\Plataformas\\Naves\\Space.cpp",
+              "RelativeToolTip": "Naves\\Space.cpp",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAALoAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-09-29T14:13:23.718Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Tile.cpp",
+              "DocumentMoniker": "C:\\Users\\uo300006\\Desktop\\SEV\\Plataformas\\Naves\\Tile.cpp",
+              "RelativeDocumentMoniker": "Naves\\Tile.cpp",
+              "ToolTip": "C:\\Users\\uo300006\\Desktop\\SEV\\Plataformas\\Naves\\Tile.cpp",
+              "RelativeToolTip": "Naves\\Tile.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-09-29T13:21:03.888Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "GameLayer.h",
+              "DocumentMoniker": "C:\\Users\\uo300006\\Desktop\\SEV\\Plataformas\\Naves\\GameLayer.h",
+              "RelativeDocumentMoniker": "Naves\\GameLayer.h",
+              "ToolTip": "C:\\Users\\uo300006\\Desktop\\SEV\\Plataformas\\Naves\\GameLayer.h",
+              "RelativeToolTip": "Naves\\GameLayer.h",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB4AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-09-29T13:21:13.658Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Space.h",
+              "DocumentMoniker": "C:\\Users\\uo300006\\Desktop\\SEV\\Plataformas\\Naves\\Space.h",
+              "RelativeDocumentMoniker": "Naves\\Space.h",
+              "ToolTip": "C:\\Users\\uo300006\\Desktop\\SEV\\Plataformas\\Naves\\Space.h",
+              "RelativeToolTip": "Naves\\Space.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-09-29T14:13:02.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Actor.cpp",
+              "DocumentMoniker": "C:\\Users\\uo300006\\Desktop\\SEV\\Plataformas\\Naves\\Actor.cpp",
+              "RelativeDocumentMoniker": "Naves\\Actor.cpp",
+              "ToolTip": "C:\\Users\\uo300006\\Desktop\\SEV\\Plataformas\\Naves\\Actor.cpp",
+              "RelativeToolTip": "Naves\\Actor.cpp",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAADUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-09-29T13:46:11.316Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Background.cpp",
+              "DocumentMoniker": "C:\\Users\\uo300006\\Desktop\\SEV\\Plataformas\\Naves\\Background.cpp",
+              "RelativeDocumentMoniker": "Naves\\Background.cpp",
+              "ToolTip": "C:\\Users\\uo300006\\Desktop\\SEV\\Plataformas\\Naves\\Background.cpp",
+              "RelativeToolTip": "Naves\\Background.cpp",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-09-29T13:47:27.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Background.h",
+              "DocumentMoniker": "C:\\Users\\uo300006\\Desktop\\SEV\\Plataformas\\Naves\\Background.h",
+              "RelativeDocumentMoniker": "Naves\\Background.h",
+              "ToolTip": "C:\\Users\\uo300006\\Desktop\\SEV\\Plataformas\\Naves\\Background.h",
+              "RelativeToolTip": "Naves\\Background.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-09-29T13:47:17.021Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Tile.h",
+              "DocumentMoniker": "C:\\Users\\uo300006\\Desktop\\SEV\\Plataformas\\Naves\\Tile.h",
+              "RelativeDocumentMoniker": "Naves\\Tile.h",
+              "ToolTip": "C:\\Users\\uo300006\\Desktop\\SEV\\Plataformas\\Naves\\Tile.h",
+              "RelativeToolTip": "Naves\\Tile.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-09-29T13:20:16.798Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

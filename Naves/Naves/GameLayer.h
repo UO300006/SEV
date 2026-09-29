@@ -6,6 +6,7 @@
 #include "Enemy.h"
 #include "Projectile.h"
 #include "Text.h"
+#include "Coin.h"
 
 #include "Audio.h" 
 
@@ -25,6 +26,7 @@ public:
 	Text* textPoints;
 	int points;
 	int newEnemyTime = 0;
+	int newCoinTime = 0;
 
 	Player* player;
 	Background* background;
@@ -34,5 +36,6 @@ public:
 	int controlMoveX = 0;
 
 	list<Enemy*> enemies;
+	list<Coin*> coins;
 	list<Projectile*> projectiles;
 };

@@ -22,8 +22,14 @@ void GameLayer::init() {
 	projectiles.clear(); // Vaciar por si reiniciamos el juego
 
 	enemies.clear(); // Vaciar por si reiniciamos el juego
+
+	coins.clear();//
 	enemies.push_back(new Enemy(300, 50, game));
 	enemies.push_back(new Enemy(300, 200, game));
+
+	int coinX = 50 + std::rand() % (WIDTH - 2 * 50);
+	int coinY = 50 + std::rand() % (HEIGHT - 2 * 50);
+	coins.push_back(new Coin(coinX, coinY, game));
 
 }
 
@@ -135,12 +141,19 @@ void GameLayer::keysToControls(SDL_Event event) {
 
 void GameLayer::update() {
 	background->update();
+	//Generar Monedas
+	if (newCoinTime <= 0) {
+		int rX = (rand() % (600 - 500)) + 1 + 500;
+		int rY = (rand() % (300 - 60)) + 1 + 60;
+		coins.push_back(new Coin(rX, rY, game));
+		newEnemyTime = 60;
+	}
 	// Generar enemigos
 	newEnemyTime--;
 	if (newEnemyTime <= 0) {
-		int rX = (rand() % (600 - 500)) + 1 + 500;
-		int rY = (rand() % (300 - 60)) + 1 + 60;
-		enemies.push_back(new Enemy(rX, rY, game));
+		int coinX = 50 + std::rand() % (WIDTH - 2 * 50);
+		int coinY = 50 + std::rand() % (HEIGHT - 2 * 50);
+		enemies.push_back(new Enemy(coinX, coinY, game));
 		newEnemyTime = 110;
 	}
 
@@ -159,6 +172,19 @@ void GameLayer::update() {
 			return; // Cortar el for
 		}
 	}
+
+	//Colisiones , Player - Coin
+	list<Coin*> deleteCoins;
+	for (auto const& coin : coins) {
+		if (player->isOverlap(coin)) {
+			deleteCoins.push_back(coin);
+			points += coin->points;
+		}
+	}
+	for (auto const& delCoin : deleteCoins) {
+		coins.remove(delCoin);
+	}
+	deleteCoins.clear();
 
 	// Colisiones , Enemy - Projectile
 

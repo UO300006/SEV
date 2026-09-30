@@ -3,7 +3,8 @@
 #include "Layer.h"
 #include "Player.h"
 #include "Background.h"
-#include "Enemy.h"
+#include "NormalEnemy.h"
+#include "HardEnemy.h"
 #include "Projectile.h"
 #include "Text.h"
 #include "Coin.h"
@@ -26,6 +27,7 @@ public:
 	Text* textPoints;
 	int points;
 	int newEnemyTime = 0;
+	int newHardEnemyTime = 0;
 	int newCoinTime = 0;
 
 	Player* player;

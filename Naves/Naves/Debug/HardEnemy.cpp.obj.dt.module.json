@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "Debug\\HardEnemy.obj",
+            "outputs": [
+                "Debug\\HardEnemy.cpp.obj.dt.module.json",
+                "Debug\\HardEnemy.cpp.obj.dt.d.json"
+            ],
+            "requires": []
+        }
+    ]
+}

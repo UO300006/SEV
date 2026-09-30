@@ -24,8 +24,9 @@ void GameLayer::init() {
 	enemies.clear(); // Vaciar por si reiniciamos el juego
 
 	coins.clear();//
-	enemies.push_back(new Enemy(300, 50, game));
-	enemies.push_back(new Enemy(300, 200, game));
+	enemies.push_back(new NormalEnemy(300, 50, game));
+	enemies.push_back(new NormalEnemy(300, 200, game));
+	enemies.push_back(new HardEnemy(WIDTH/2 + WIDTH/4, HEIGHT/2, game));
 
 	int coinX = 50 + std::rand() % (WIDTH - 2 * 50);
 	int coinY = 50 + std::rand() % (HEIGHT - 2 * 50);
@@ -142,19 +143,28 @@ void GameLayer::keysToControls(SDL_Event event) {
 void GameLayer::update() {
 	background->update();
 	//Generar Monedas
+	newCoinTime--;
 	if (newCoinTime <= 0) {
-		int rX = (rand() % (600 - 500)) + 1 + 500;
-		int rY = (rand() % (300 - 60)) + 1 + 60;
-		coins.push_back(new Coin(rX, rY, game));
-		newEnemyTime = 60;
+		int coinX = 50 + std::rand() % (WIDTH - 2 * 50);
+		int coinY = 50 + std::rand() % (HEIGHT - 2 * 50);
+		coins.push_back(new Coin(coinX, coinY, game));
+		newCoinTime = 300;
 	}
 	// Generar enemigos
 	newEnemyTime--;
 	if (newEnemyTime <= 0) {
-		int coinX = 50 + std::rand() % (WIDTH - 2 * 50);
-		int coinY = 50 + std::rand() % (HEIGHT - 2 * 50);
-		enemies.push_back(new Enemy(coinX, coinY, game));
+		int rX = (rand() % (600 - 500)) + 1 + 500;
+		int rY = (rand() % (300 - 60)) + 1 + 60;
+		enemies.push_back(new NormalEnemy(rX, rY, game));
 		newEnemyTime = 110;
+	}
+
+	newHardEnemyTime--;
+	if (newHardEnemyTime <= 0) {
+		int rX = (rand() % (600 - 500)) + 1 + 500;
+		int rY = (rand() % (300 - 60)) + 1 + 60;
+		enemies.push_back(new HardEnemy(rX, rY, game));
+		newHardEnemyTime = 220;
 	}
 
 	player->update();
@@ -208,12 +218,18 @@ void GameLayer::update() {
 	for (auto const& enemy : enemies) {
 		for (auto const& projectile : projectiles) {
 			if (enemy->isOverlap(projectile)) {
+				enemy->hit();
+
 				bool pInList = std::find(deleteProjectiles.begin(),
 					deleteProjectiles.end(),
 					projectile) != deleteProjectiles.end();
 
 				if (!pInList) {
 					deleteProjectiles.push_back(projectile);
+				}
+
+				if (!enemy->isDead()) {
+					continue;
 				}
 
 				bool eInList = std::find(deleteEnemies.begin(),

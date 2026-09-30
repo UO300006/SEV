@@ -4,8 +4,8 @@
 #include "Projectile.h" 
 #include "Audio.h"
 
-#define BASE_SHOOT_CADENCE 30
-#define BASE_MOVE_SPEED 3
+#define BASE_SHOOT_CADENCE 30	//Valor base del jugador 1 para la cadencia
+#define BASE_MOVE_SPEED 3		//Valor base del jugador1 para la velocidad de movimiento
 
 class Player : public Actor
 {
@@ -15,8 +15,8 @@ public:
 	void update();
 	void moveX(float axis);
 	void moveY(float axis);
-	void changePlayer();
-	bool firstPlayer = true; //true a primer jugador, false segundo jugador
+	int currentPlayer = 1; //Variable de control para evitar operaciones innecesarias
+	void changePlayer(int player);
 	Audio* audioShoot;
 	int shootCadence = 30;
 	int shootTime = 0;

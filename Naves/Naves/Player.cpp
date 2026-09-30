@@ -33,19 +33,27 @@ Projectile* Player::shoot() {
 
 }
 
-void Player::changePlayer() {
-	if (firstPlayer) {
-		changeTexture("res/jugador2.png");
-		shootCadence = BASE_SHOOT_CADENCE/3;
-		moveSpeed = BASE_MOVE_SPEED*2;
-	}
-	else {
+void Player::changePlayer(int player) {
+
+	if (player == currentPlayer)
+		return;
+
+	currentPlayer = player;
+
+	switch (player) {
+	case 1: 
 		changeTexture("res/jugador.png");
 		shootCadence = BASE_SHOOT_CADENCE;
 		moveSpeed = BASE_MOVE_SPEED;
+		break;
+	case 2: 
+		changeTexture("res/jugador2.png");
+		shootCadence = BASE_SHOOT_CADENCE / 3;	//Triple de velocidad de disparo
+		moveSpeed = BASE_MOVE_SPEED / 2;	//Mitad de velocidad de movimiento
+		break;
 	}
-	firstPlayer = !firstPlayer;
 }
+
 
 
 

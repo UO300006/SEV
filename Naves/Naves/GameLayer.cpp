@@ -82,7 +82,10 @@ void GameLayer::keysToControls(SDL_Event event) {
 			game->scale();
 			break;
 		case SDLK_1:
-			player->changePlayer();
+			player->changePlayer(1);
+			break;
+		case SDLK_2:
+			player->changePlayer(2);
 			break;
 		case SDLK_d: // derecha
 			controlMoveX = 1;

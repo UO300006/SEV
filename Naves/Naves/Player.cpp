@@ -14,11 +14,11 @@ void Player::update() {
 }
 
 void Player::moveX(float axis) {
-	vx = axis * 3;
+	vx = axis * moveSpeed;
 }
 
 void Player::moveY(float axis) {
-	vy = axis * 3;
+	vy = axis * moveSpeed;
 }
 
 Projectile* Player::shoot() {
@@ -32,4 +32,20 @@ Projectile* Player::shoot() {
 	}
 
 }
+
+void Player::changePlayer() {
+	if (firstPlayer) {
+		changeTexture("res/jugador2.png");
+		shootCadence = BASE_SHOOT_CADENCE/3;
+		moveSpeed = BASE_MOVE_SPEED*2;
+	}
+	else {
+		changeTexture("res/jugador.png");
+		shootCadence = BASE_SHOOT_CADENCE;
+		moveSpeed = BASE_MOVE_SPEED;
+	}
+	firstPlayer = !firstPlayer;
+}
+
+
 

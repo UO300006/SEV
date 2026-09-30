@@ -55,4 +55,8 @@ bool Actor::isInRender() {
 Actor::~Actor() {
 }
 
+void Actor::changeTexture(string filename) {
+	this->texture = game->getTexture(filename);
+}
+
 

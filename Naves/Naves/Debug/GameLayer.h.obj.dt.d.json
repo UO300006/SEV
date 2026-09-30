@@ -275,10 +275,13 @@
             "c:\\videojuegos\\include\\begin_code.h",
             "c:\\videojuegos\\include\\close_code.h",
             "c:\\users\\sonpe\\desktop\\universidad\\sev\\naves\\naves\\background.h",
+            "c:\\users\\sonpe\\desktop\\universidad\\sev\\naves\\naves\\normalenemy.h",
             "c:\\users\\sonpe\\desktop\\universidad\\sev\\naves\\naves\\enemy.h",
             "c:\\users\\sonpe\\desktop\\universidad\\sev\\naves\\naves\\animation.h",
+            "c:\\users\\sonpe\\desktop\\universidad\\sev\\naves\\naves\\hardenemy.h",
             "c:\\users\\sonpe\\desktop\\universidad\\sev\\naves\\naves\\text.h",
             "c:\\users\\sonpe\\desktop\\universidad\\sev\\naves\\naves\\coin.h",
+            "c:\\users\\sonpe\\desktop\\universidad\\sev\\naves\\naves\\bomb.h",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\list"
         ],
         "ImportedModules": [],

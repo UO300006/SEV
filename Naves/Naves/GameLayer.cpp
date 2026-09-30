@@ -23,15 +23,12 @@ void GameLayer::init() {
 
 	enemies.clear(); // Vaciar por si reiniciamos el juego
 
-	coins.clear();//
+	coins.clear();// Vaciar lista de monedas
+
+	bombs.clear(); //Vaciar lista de bombas
 	enemies.push_back(new NormalEnemy(300, 50, game));
 	enemies.push_back(new NormalEnemy(300, 200, game));
 	enemies.push_back(new HardEnemy(WIDTH/2 + WIDTH/4, HEIGHT/2, game));
-
-	int coinX = 50 + std::rand() % (WIDTH - 2 * 50);
-	int coinY = 50 + std::rand() % (HEIGHT - 2 * 50);
-	coins.push_back(new Coin(coinX, coinY, game));
-
 }
 
 void GameLayer::processControls() {
@@ -142,6 +139,16 @@ void GameLayer::keysToControls(SDL_Event event) {
 
 void GameLayer::update() {
 	background->update();
+
+	//Generar bombas
+	newBombTime--;
+	if (newBombTime <= 0) {
+		int bombX = 50 + std::rand() % (WIDTH - 2 * 50);
+		int bombY = 50 + std::rand() % (HEIGHT - 2 * 50);
+		bombs.push_back(new Bomb(bombX, bombY, game));
+		newBombTime = 400;
+	}
+
 	//Generar Monedas
 	newCoinTime--;
 	if (newCoinTime <= 0) {
@@ -246,6 +253,26 @@ void GameLayer::update() {
 		}
 	}
 
+	//Colisiones , Player - Bomb
+	list<Bomb*> deleteBombs;
+	int deletedEnemiesByBomb = 0;
+	for (auto const& bomb : bombs) {
+		if (player->isOverlap(bomb)) {
+			deleteBombs.push_back(bomb);
+			for (auto const& enemy : enemies) {
+				deleteEnemies.push_back(enemy);
+				deletedEnemiesByBomb++;
+			}
+		}
+	}
+	points+= deletedEnemiesByBomb;
+	textPoints->content = to_string(points);
+
+	for (auto const& delBomb : deleteBombs) {
+		bombs.remove(delBomb);
+	}
+	deleteBombs.clear();
+
 	for (auto const& delEnemy : deleteEnemies) {
 		enemies.remove(delEnemy);
 	}
@@ -274,6 +301,10 @@ void GameLayer::draw() {
 
 	for (auto const& coin : coins) {
 		coin->draw();
+	}
+
+	for (auto const& bomb : bombs) {
+		bomb->draw();
 	}
 	textPoints->draw();
 	backgroundPoints->draw();

@@ -8,6 +8,7 @@
 #include "Projectile.h"
 #include "Text.h"
 #include "Coin.h"
+#include "Bomb.h"
 
 #include "Audio.h" 
 
@@ -29,6 +30,7 @@ public:
 	int newEnemyTime = 0;
 	int newHardEnemyTime = 0;
 	int newCoinTime = 0;
+	int newBombTime = 0;
 
 	Player* player;
 	Background* background;
@@ -40,4 +42,5 @@ public:
 	list<Enemy*> enemies;
 	list<Coin*> coins;
 	list<Projectile*> projectiles;
+	list<Bomb*> bombs;
 };

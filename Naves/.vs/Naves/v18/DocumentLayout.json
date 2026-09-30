@@ -3,6 +3,42 @@
   "WorkspaceRootPath": "C:\\Users\\sonpe\\Desktop\\Universidad\\SEV\\Naves\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|C:\\Users\\sonpe\\Desktop\\Universidad\\SEV\\Naves\\Naves\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|solutionrelative:Naves\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|C:\\Users\\sonpe\\Desktop\\Universidad\\SEV\\Naves\\Naves\\Coin.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|solutionrelative:Naves\\Coin.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|C:\\Users\\sonpe\\Desktop\\Universidad\\SEV\\Naves\\Naves\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|solutionrelative:Naves\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|C:\\Users\\sonpe\\Desktop\\Universidad\\SEV\\Naves\\Naves\\Bomb.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|solutionrelative:Naves\\Bomb.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|C:\\Users\\sonpe\\Desktop\\Universidad\\SEV\\Naves\\Naves\\GameLayer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|solutionrelative:Naves\\GameLayer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|C:\\Users\\sonpe\\Desktop\\Universidad\\SEV\\Naves\\Naves\\GameLayer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|solutionrelative:Naves\\GameLayer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|C:\\Users\\sonpe\\Desktop\\Universidad\\SEV\\Naves\\Naves\\Coin.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|solutionrelative:Naves\\Coin.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|C:\\Users\\sonpe\\Desktop\\Universidad\\SEV\\Naves\\Naves\\Bomb.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|solutionrelative:Naves\\Bomb.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|C:\\Users\\sonpe\\Desktop\\Universidad\\SEV\\Naves\\Naves\\Background.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|solutionrelative:Naves\\Background.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|C:\\Users\\sonpe\\Desktop\\Universidad\\SEV\\Naves\\Naves\\HardEnemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|solutionrelative:Naves\\HardEnemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -19,10 +55,6 @@
       "RelativeMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|solutionrelative:Naves\\HardEnemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|C:\\Users\\sonpe\\Desktop\\Universidad\\SEV\\Naves\\Naves\\GameLayer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|solutionrelative:Naves\\GameLayer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|C:\\Users\\sonpe\\Desktop\\Universidad\\SEV\\Naves\\Naves\\NormalEnemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|solutionrelative:Naves\\NormalEnemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -31,24 +63,8 @@
       "RelativeMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|solutionrelative:Naves\\NormalEnemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|C:\\Users\\sonpe\\Desktop\\Universidad\\SEV\\Naves\\Naves\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|solutionrelative:Naves\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|C:\\Users\\sonpe\\Desktop\\Universidad\\SEV\\Naves\\Naves\\GameLayer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|solutionrelative:Naves\\GameLayer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|C:\\Users\\sonpe\\Desktop\\Universidad\\SEV\\Naves\\Naves\\Actor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|solutionrelative:Naves\\Actor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|C:\\Users\\sonpe\\Desktop\\Universidad\\SEV\\Naves\\Naves\\Coin.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|solutionrelative:Naves\\Coin.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|C:\\Users\\sonpe\\Desktop\\Universidad\\SEV\\Naves\\Naves\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|solutionrelative:Naves\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A22D4DD4-60BF-42BA-9228-4B9CB2EC77FC}|Naves\\Naves.vcxproj|C:\\Users\\sonpe\\Desktop\\Universidad\\SEV\\Naves\\Naves\\Actor.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -62,8 +78,79 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Player.cpp",
+              "DocumentMoniker": "C:\\Users\\sonpe\\Desktop\\Universidad\\SEV\\Naves\\Naves\\Player.cpp",
+              "RelativeDocumentMoniker": "Naves\\Player.cpp",
+              "ToolTip": "C:\\Users\\sonpe\\Desktop\\Universidad\\SEV\\Naves\\Naves\\Player.cpp",
+              "RelativeToolTip": "Naves\\Player.cpp",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-09-30T13:23:27.676Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Bomb.h",
+              "DocumentMoniker": "C:\\Users\\sonpe\\Desktop\\Universidad\\SEV\\Naves\\Naves\\Bomb.h",
+              "RelativeDocumentMoniker": "Naves\\Bomb.h",
+              "ToolTip": "C:\\Users\\sonpe\\Desktop\\Universidad\\SEV\\Naves\\Naves\\Bomb.h",
+              "RelativeToolTip": "Naves\\Bomb.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-09-30T16:51:41.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Coin.cpp",
+              "DocumentMoniker": "C:\\Users\\sonpe\\Desktop\\Universidad\\SEV\\Naves\\Naves\\Coin.cpp",
+              "RelativeDocumentMoniker": "Naves\\Coin.cpp",
+              "ToolTip": "C:\\Users\\sonpe\\Desktop\\Universidad\\SEV\\Naves\\Naves\\Coin.cpp",
+              "RelativeToolTip": "Naves\\Coin.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-09-30T13:15:59.954Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Player.h",
+              "DocumentMoniker": "C:\\Users\\sonpe\\Desktop\\Universidad\\SEV\\Naves\\Naves\\Player.h",
+              "RelativeDocumentMoniker": "Naves\\Player.h",
+              "ToolTip": "C:\\Users\\sonpe\\Desktop\\Universidad\\SEV\\Naves\\Naves\\Player.h",
+              "RelativeToolTip": "Naves\\Player.h",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-09-30T13:06:43.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Coin.h",
+              "DocumentMoniker": "C:\\Users\\sonpe\\Desktop\\Universidad\\SEV\\Naves\\Naves\\Coin.h",
+              "RelativeDocumentMoniker": "Naves\\Coin.h",
+              "ToolTip": "C:\\Users\\sonpe\\Desktop\\Universidad\\SEV\\Naves\\Naves\\Coin.h",
+              "RelativeToolTip": "Naves\\Coin.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-09-30T16:52:20.387Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 4,
@@ -72,7 +159,7 @@
               "RelativeDocumentMoniker": "Naves\\GameLayer.cpp",
               "ToolTip": "C:\\Users\\sonpe\\Desktop\\Universidad\\SEV\\Naves\\Naves\\GameLayer.cpp",
               "RelativeToolTip": "Naves\\GameLayer.cpp",
-              "ViewState": "AgIAAJcAAAAAAAAAAAAuwKQAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAawB0AAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-09-30T13:21:39.025Z",
               "EditorCaption": ""
@@ -80,6 +167,57 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "GameLayer.h",
+              "DocumentMoniker": "C:\\Users\\sonpe\\Desktop\\Universidad\\SEV\\Naves\\Naves\\GameLayer.h",
+              "RelativeDocumentMoniker": "Naves\\GameLayer.h",
+              "ToolTip": "C:\\Users\\sonpe\\Desktop\\Universidad\\SEV\\Naves\\Naves\\GameLayer.h",
+              "RelativeToolTip": "Naves\\GameLayer.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-09-30T13:21:43.575Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Bomb.cpp",
+              "DocumentMoniker": "C:\\Users\\sonpe\\Desktop\\Universidad\\SEV\\Naves\\Naves\\Bomb.cpp",
+              "RelativeDocumentMoniker": "Naves\\Bomb.cpp",
+              "ToolTip": "C:\\Users\\sonpe\\Desktop\\Universidad\\SEV\\Naves\\Naves\\Bomb.cpp",
+              "RelativeToolTip": "Naves\\Bomb.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-09-30T16:53:16.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Background.h",
+              "DocumentMoniker": "C:\\Users\\sonpe\\Desktop\\Universidad\\SEV\\Naves\\Naves\\Background.h",
+              "RelativeDocumentMoniker": "Naves\\Background.h",
+              "ToolTip": "C:\\Users\\sonpe\\Desktop\\Universidad\\SEV\\Naves\\Naves\\Background.h",
+              "RelativeToolTip": "Naves\\Background.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-09-30T16:52:31.872Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Enemy.h",
+              "DocumentMoniker": "C:\\Users\\sonpe\\Desktop\\Universidad\\SEV\\Naves\\Naves\\Enemy.h",
+              "RelativeDocumentMoniker": "Naves\\Enemy.h",
+              "ToolTip": "C:\\Users\\sonpe\\Desktop\\Universidad\\SEV\\Naves\\Naves\\Enemy.h",
+              "RelativeToolTip": "Naves\\Enemy.h",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-09-30T13:06:25.45Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "NormalEnemy.cpp",
               "DocumentMoniker": "C:\\Users\\sonpe\\Desktop\\Universidad\\SEV\\Naves\\Naves\\NormalEnemy.cpp",
               "RelativeDocumentMoniker": "Naves\\NormalEnemy.cpp",
@@ -91,20 +229,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Enemy.h",
-              "DocumentMoniker": "C:\\Users\\sonpe\\Desktop\\Universidad\\SEV\\Naves\\Naves\\Enemy.h",
-              "RelativeDocumentMoniker": "Naves\\Enemy.h",
-              "ToolTip": "C:\\Users\\sonpe\\Desktop\\Universidad\\SEV\\Naves\\Naves\\Enemy.h",
-              "RelativeToolTip": "Naves\\Enemy.h",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-09-30T13:06:25.45Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 11,
               "Title": "Enemy.cpp",
               "DocumentMoniker": "C:\\Users\\sonpe\\Desktop\\Universidad\\SEV\\Naves\\Naves\\Enemy.cpp",
               "RelativeDocumentMoniker": "Naves\\Enemy.cpp",
@@ -112,12 +237,11 @@
               "RelativeToolTip": "Naves\\Enemy.cpp",
               "ViewState": "AgIAAA4AAAAAAAAAAAAswBkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-09-30T13:08:45.86Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-30T13:08:45.86Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 12,
               "Title": "HardEnemy.h",
               "DocumentMoniker": "C:\\Users\\sonpe\\Desktop\\Universidad\\SEV\\Naves\\Naves\\HardEnemy.h",
               "RelativeDocumentMoniker": "Naves\\HardEnemy.h",
@@ -125,12 +249,11 @@
               "RelativeToolTip": "Naves\\HardEnemy.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-09-30T13:05:41.696Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-30T13:05:41.696Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 9,
               "Title": "HardEnemy.cpp",
               "DocumentMoniker": "C:\\Users\\sonpe\\Desktop\\Universidad\\SEV\\Naves\\Naves\\HardEnemy.cpp",
               "RelativeDocumentMoniker": "Naves\\HardEnemy.cpp",
@@ -143,7 +266,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 14,
               "Title": "NormalEnemy.h",
               "DocumentMoniker": "C:\\Users\\sonpe\\Desktop\\Universidad\\SEV\\Naves\\Naves\\NormalEnemy.h",
               "RelativeDocumentMoniker": "Naves\\NormalEnemy.h",
@@ -155,31 +278,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Player.cpp",
-              "DocumentMoniker": "C:\\Users\\sonpe\\Desktop\\Universidad\\SEV\\Naves\\Naves\\Player.cpp",
-              "RelativeDocumentMoniker": "Naves\\Player.cpp",
-              "ToolTip": "C:\\Users\\sonpe\\Desktop\\Universidad\\SEV\\Naves\\Naves\\Player.cpp",
-              "RelativeToolTip": "Naves\\Player.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-09-30T13:23:27.676Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "GameLayer.h",
-              "DocumentMoniker": "C:\\Users\\sonpe\\Desktop\\Universidad\\SEV\\Naves\\Naves\\GameLayer.h",
-              "RelativeDocumentMoniker": "Naves\\GameLayer.h",
-              "ToolTip": "C:\\Users\\sonpe\\Desktop\\Universidad\\SEV\\Naves\\Naves\\GameLayer.h",
-              "RelativeToolTip": "Naves\\GameLayer.h",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAAAUAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-09-30T13:21:43.575Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 15,
               "Title": "Actor.cpp",
               "DocumentMoniker": "C:\\Users\\sonpe\\Desktop\\Universidad\\SEV\\Naves\\Naves\\Actor.cpp",
               "RelativeDocumentMoniker": "Naves\\Actor.cpp",
@@ -191,31 +290,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Coin.cpp",
-              "DocumentMoniker": "C:\\Users\\sonpe\\Desktop\\Universidad\\SEV\\Naves\\Naves\\Coin.cpp",
-              "RelativeDocumentMoniker": "Naves\\Coin.cpp",
-              "ToolTip": "C:\\Users\\sonpe\\Desktop\\Universidad\\SEV\\Naves\\Naves\\Coin.cpp",
-              "RelativeToolTip": "Naves\\Coin.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-09-30T13:15:59.954Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Player.h",
-              "DocumentMoniker": "C:\\Users\\sonpe\\Desktop\\Universidad\\SEV\\Naves\\Naves\\Player.h",
-              "RelativeDocumentMoniker": "Naves\\Player.h",
-              "ToolTip": "C:\\Users\\sonpe\\Desktop\\Universidad\\SEV\\Naves\\Naves\\Player.h",
-              "RelativeToolTip": "Naves\\Player.h",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-09-30T13:06:43.789Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "Actor.h",
               "DocumentMoniker": "C:\\Users\\sonpe\\Desktop\\Universidad\\SEV\\Naves\\Naves\\Actor.h",
               "RelativeDocumentMoniker": "Naves\\Actor.h",

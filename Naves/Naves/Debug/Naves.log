@@ -1,4 +1,2 @@
-﻿  HardEnemy.cpp
-C:\Users\sonpe\Desktop\Universidad\SEV\Naves\Naves\HardEnemy.cpp(12,8): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\sonpe\Desktop\Universidad\SEV\Naves\Naves\HardEnemy.cpp(13,8): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+﻿  Coin.cpp
   Naves.vcxproj -> C:\Users\sonpe\Desktop\Universidad\SEV\Naves\Debug\Naves.exe

@@ -1,4 +1,22 @@
-﻿  HardEnemy.cpp
-C:\Users\sonpe\Desktop\Universidad\SEV\Naves\Naves\HardEnemy.cpp(17,7): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\sonpe\Desktop\Universidad\SEV\Naves\Naves\HardEnemy.cpp(23,22): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
+﻿  Game.cpp
+C:\Users\sonpe\Desktop\Universidad\SEV\Naves\Naves\Audio.h(8,10): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
+  (compilando archivo de origen "Game.cpp")
+  
+C:\Users\sonpe\Desktop\Universidad\SEV\Naves\Naves\Game.cpp(65,56): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\sonpe\Desktop\Universidad\SEV\Naves\Naves\Game.cpp(65,35): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+  GameLayer.cpp
+C:\Users\sonpe\Desktop\Universidad\SEV\Naves\Naves\Audio.h(8,10): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
+  (compilando archivo de origen "GameLayer.cpp")
+  
+C:\Users\sonpe\Desktop\Universidad\SEV\Naves\Naves\GameLayer.cpp(14,53): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\sonpe\Desktop\Universidad\SEV\Naves\Naves\GameLayer.cpp(14,38): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\sonpe\Desktop\Universidad\SEV\Naves\Naves\GameLayer.cpp(154,35): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\sonpe\Desktop\Universidad\SEV\Naves\Naves\GameLayer.cpp(154,28): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\sonpe\Desktop\Universidad\SEV\Naves\Naves\GameLayer.cpp(163,35): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\sonpe\Desktop\Universidad\SEV\Naves\Naves\GameLayer.cpp(163,28): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\sonpe\Desktop\Universidad\SEV\Naves\Naves\GameLayer.cpp(171,41): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\sonpe\Desktop\Universidad\SEV\Naves\Naves\GameLayer.cpp(171,37): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\sonpe\Desktop\Universidad\SEV\Naves\Naves\GameLayer.cpp(179,39): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\sonpe\Desktop\Universidad\SEV\Naves\Naves\GameLayer.cpp(179,35): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+  Generando código...
   Naves.vcxproj -> C:\Users\sonpe\Desktop\Universidad\SEV\Naves\Debug\Naves.exe

@@ -29,8 +29,8 @@ public:
 	int points;
 	int newEnemyTime = 0;
 	int newHardEnemyTime = 0;
-	int newCoinTime = 0;
-	int newBombTime = 0;
+	int newCoinTime = 300;
+	int newBombTime = 400;
 
 	Player* player;
 	Background* background;

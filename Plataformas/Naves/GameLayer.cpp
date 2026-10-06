@@ -3,10 +3,20 @@
 GameLayer::GameLayer(Game* game)
 	: Layer(game) {
 	//llama al constructor del padre : Layer(renderer)
+	pause = true;
+	message = new Actor("res/mensaje_como_jugar.png", WIDTH * 0.5, HEIGHT * 0.5,
+		WIDTH, HEIGHT, game);
+
+	gamePad = SDL_GameControllerOpen(0);
+
 	init();
 }
 
 void GameLayer::init() {
+	pad = new Pad(WIDTH * 0.15, HEIGHT * 0.80, game);
+	buttonJump = new Actor("res/boton_salto.png", WIDTH * 0.9, HEIGHT * 0.55, 100, 100, game);
+	buttonShoot = new Actor("res/boton_disparo.png", WIDTH * 0.75, HEIGHT * 0.83, 100, 100, game);
+
 	space = new Space(1);
 	scrollX = 0;
 	tiles.clear();
@@ -26,7 +36,7 @@ void GameLayer::init() {
 
 	enemies.clear(); // Vaciar por si reiniciamos el juego
 	
-	loadMap("res/0.txt");
+	loadMap("res/" + to_string(game->currentLevel) + ".txt");
 
 }
 
@@ -34,15 +44,53 @@ void GameLayer::processControls() {
 	// obtener controles
 	SDL_Event event;
 	while (SDL_PollEvent(&event)) {
-		keysToControls(event);
+		if (event.type == SDL_CONTROLLERDEVICEADDED) {
+			gamePad = SDL_GameControllerOpen(0);
+			if (gamePad == NULL) {
+				cout << "error en GamePad" << endl;
+			}
+			else {
+				cout << "GamePad conectado" << endl;
+			}
+		}
+		// Cambio automático de input
+		 // PONER el GamePad
+		if (event.type == SDL_CONTROLLERBUTTONDOWN || event.type == SDL_CONTROLLERAXISMOTION) {
+			game->input = game->inputGamePad;
+		}
+
+		if (event.type == SDL_KEYDOWN) {
+			game->input = game->inputKeyboard;
+		}
+		if (event.type == SDL_MOUSEBUTTONDOWN) {
+			game->input = game->inputMouse;
+		}
+		// Procesar Mando
+		if (game->input == game->inputGamePad) {  // gamePAD
+			gamePadToControls(event);
+		}
+
+		// Procesar teclas
+		if (game->input == game->inputKeyboard) {
+			keysToControls(event);
+		}
+		if (game->input == game->inputMouse) {
+			mouseToControls(event);
+		}
 	}
 	//procesar controles
+	if (controlContinue) {
+		pause = false;
+		controlContinue = false;
+	}
+
 	// Disparar
 	if (controlShoot) {
 		Projectile* newProjectile = player->shoot();
 		if (newProjectile != NULL) {
 			space->addDynamicActor(newProjectile);
 			projectiles.push_back(newProjectile);
+			controlShoot = false;
 		}
 	}
 
@@ -136,6 +184,22 @@ void GameLayer::keysToControls(SDL_Event event) {
 
 
 void GameLayer::update() {
+	if (pause) {
+		return;
+	}
+
+	// Nivel superado
+	if (cup->isOverlap(player)) {
+		game->currentLevel++;
+		if (game->currentLevel > game->finalLevel) {
+			game->currentLevel = 0;
+		}
+		message = new Actor("res/mensaje_ganar.png", WIDTH * 0.5, HEIGHT * 0.5,
+			WIDTH, HEIGHT, game);
+		pause = true;
+		init();
+	}
+
 	// Jugador se cae
 	if (player->y > HEIGHT + 80) {
 		init();
@@ -260,7 +324,7 @@ void GameLayer::draw() {
 	for (auto const& projectile : projectiles) {
 		projectile->draw(scrollX);
 	}
-
+	cup->draw(scrollX);
 	player->draw(scrollX);
 
 	for (auto const& enemy : enemies) {
@@ -268,6 +332,16 @@ void GameLayer::draw() {
 	}
 	textPoints->draw();
 	backgroundPoints->draw();
+
+	// HUD
+	if (game->input == game->inputMouse) {
+		buttonJump->draw(); // NO TIENEN SCROLL, POSICION FIJA
+		buttonShoot->draw(); // NO TIENEN SCROLL, POSICION FIJA
+		pad->draw(); // NO TIENEN SCROLL, POSICION FIJA
+	}
+	if (pause) {
+		message->draw();
+	}
 
 	SDL_RenderPresent(game->renderer); // Renderiza
 }
@@ -304,6 +378,14 @@ void GameLayer::loadMap(string name) {
 void GameLayer::loadMapObject(char character, float x, float y)
 {
 	switch (character) {
+	case 'C': {
+		cup = new Tile("res/copa.png", x, y, game);
+		// modificación para empezar a contar desde el suelo.
+		cup->y = cup->y - cup->height / 2;
+		space->addDynamicActor(cup); // Realmente no hace falta
+		break;
+	}
+
 	case 'E': {
 		Enemy* enemy = new Enemy(x, y, game);
 		// modificación para empezar a contar desde el suelo.
@@ -328,6 +410,105 @@ void GameLayer::loadMapObject(char character, float x, float y)
 		break;
 	}
 	}
+
 }
+
+void GameLayer::mouseToControls(SDL_Event event) {
+	// Modificación de coordenadas por posible escalado
+	float motionX = event.motion.x / game->scaleLower;
+	float motionY = event.motion.y / game->scaleLower;
+	// Cada vez que hacen click
+	if (event.type == SDL_MOUSEBUTTONDOWN) {
+		controlContinue = true;
+		if (pad->containsPoint(motionX, motionY)) {
+			pad->clicked = true;
+			// CLICK TAMBIEN TE MUEVE
+			controlMoveX = pad->getOrientationX(motionX);
+		}
+		if (buttonShoot->containsPoint(motionX, motionY)) {
+			controlShoot = true;
+		}
+		if (buttonJump->containsPoint(motionX, motionY)) {
+			controlMoveY = -1;
+		}
+	}
+	// Cada vez que se mueve
+	if (event.type == SDL_MOUSEMOTION) {
+		if (pad->clicked && pad->containsPoint(motionX, motionY)) {
+			controlMoveX = pad->getOrientationX(motionX);
+			// Rango de -20 a 20 es igual que 0
+			if (controlMoveX > -20 && controlMoveX < 20) {
+				controlMoveX = 0;
+			}
+		}
+		else {
+			pad->clicked = false;
+			controlMoveX = 0;
+		}
+
+		if (buttonShoot->containsPoint(motionX, motionY) == false) {
+			controlShoot = false;
+		}
+		if (buttonJump->containsPoint(motionX, motionY) == false) {
+			controlMoveY = 0;
+		}
+
+	}
+	// Cada vez que levantan el click
+	if (event.type == SDL_MOUSEBUTTONUP) {
+		if (pad->containsPoint(motionX, motionY)) {
+			pad->clicked = false;
+			// LEVANTAR EL CLICK TAMBIEN TE PARA
+			controlMoveX = 0;
+		}
+
+		if (buttonShoot->containsPoint(motionX, motionY)) {
+			controlShoot = false;
+		}
+		if (buttonJump->containsPoint(motionX, motionY)) {
+			controlMoveY = 0;
+		}
+
+	}
+}
+
+void GameLayer::gamePadToControls(SDL_Event event) {
+
+	// Leer los botones
+	bool buttonA = SDL_GameControllerGetButton(gamePad, SDL_CONTROLLER_BUTTON_A);
+	bool buttonB = SDL_GameControllerGetButton(gamePad, SDL_CONTROLLER_BUTTON_B);
+	// SDL_CONTROLLER_BUTTON_A, SDL_CONTROLLER_BUTTON_B
+	// SDL_CONTROLLER_BUTTON_X, SDL_CONTROLLER_BUTTON_Y
+	cout << "botones:" << buttonA << "," << buttonB << endl;
+	int stickX = SDL_GameControllerGetAxis(gamePad, SDL_CONTROLLER_AXIS_LEFTX);
+	cout << "stickX" << stickX << endl;
+
+	// Retorna aproximadamente entre [-32800, 32800], el centro debería estar en 0
+	// Si el mando tiene "holgura" el centro varia [-4000 , 4000]
+	if (stickX > 4000) {
+		controlMoveX = 1;
+	}
+	else if (stickX < -4000) {
+		controlMoveX = -1;
+	}
+	else {
+		controlMoveX = 0;
+	}
+
+	if (buttonA) {
+		controlShoot = true;
+	}
+	else {
+		controlShoot = false;
+	}
+
+	if (buttonB) {
+		controlMoveY = -1; // Saltar
+	}
+	else {
+		controlMoveY = 0;
+	}
+}
+
 
 

@@ -15,6 +15,7 @@
 #include <sstream> // Leer líneas / String
 #include <list>
 #include "Pad.h"
+#include "Item.h"
 
 class GameLayer : public Layer
 {
@@ -45,12 +46,15 @@ public:
 
 	Audio* audioBackground;
 	Text* textPoints;
+	Text* textRecolectedItems;
 	int points;
+	int recolectedItems = 0;
 	int newEnemyTime = 0;
 
 	Player* player;
 	Background* background;
 	Actor* backgroundPoints;
+	Actor* backgroundItems;
 	bool controlContinue = false;
 	bool controlShoot = false;
 	int controlMoveY = 0;
@@ -58,4 +62,5 @@ public:
 
 	list<Enemy*> enemies;
 	list<Projectile*> projectiles;
+	list<Item*> items;
 };

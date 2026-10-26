@@ -28,13 +28,22 @@ void GameLayer::init() {
 	textPoints = new Text("hola", WIDTH * 0.92, HEIGHT * 0.04, game);
 	textPoints->content = to_string(points);
 
+	recolectedItems = 0;
+	textRecolectedItems = new Text("hola", WIDTH * 0.92, HEIGHT * 0.15, game);
+	textRecolectedItems->content = to_string(recolectedItems);
+
 	background = new Background("res/fondo_2.png", WIDTH * 0.5, HEIGHT * 0.5, -1, game);
 	backgroundPoints = new Actor("res/icono_puntos.png",
 		WIDTH * 0.85, HEIGHT * 0.05, 24, 24, game);
 
+	backgroundItems = new Actor("res/icono_recolectable.png",
+		WIDTH * 0.85, HEIGHT * 0.16, 40, 40, game);
+
 	projectiles.clear(); // Vaciar por si reiniciamos el juego
 
 	enemies.clear(); // Vaciar por si reiniciamos el juego
+
+	items.clear(); //Vaciar la lsita de items
 	
 	loadMap("res/" + to_string(game->currentLevel) + ".txt");
 
@@ -215,6 +224,9 @@ void GameLayer::update() {
 	for (auto const& projectile : projectiles) {
 		projectile->update();
 	}
+	for (auto const& item : items) {
+		item->update();
+	}
 
 	// Colisiones
 	for (auto const& enemy : enemies) {
@@ -227,6 +239,17 @@ void GameLayer::update() {
 
 		}
 	}
+
+	// Colisiones Jugador - Item
+	list<Item*> deleteItems;
+	for (auto const& item : items) {
+		if (player->isOverlap(item)) {
+			recolectedItems++;
+			textRecolectedItems->content = to_string(recolectedItems);
+			deleteItems.push_back(item);
+		}
+	}
+
 
 	// Colisiones , Enemy - Projectile
 
@@ -289,6 +312,11 @@ void GameLayer::update() {
 		delete delProjectile;
 	}
 	deleteProjectiles.clear();
+	for (auto const& delItem : deleteItems) {
+		items.remove(delItem);
+		space->removeDynamicActor(delItem);
+	}
+	deleteEnemies.clear();
 
 
 	cout << "update GameLayer" << endl;
@@ -330,8 +358,14 @@ void GameLayer::draw() {
 	for (auto const& enemy : enemies) {
 		enemy->draw(scrollX);
 	}
+
+	for (auto const& item : items) {
+		item->draw(scrollX);
+	}
 	textPoints->draw();
+	textRecolectedItems->draw();
 	backgroundPoints->draw();
+	backgroundItems->draw();
 
 	// HUD
 	if (game->input == game->inputMouse) {
@@ -392,6 +426,14 @@ void GameLayer::loadMapObject(char character, float x, float y)
 		enemy->y = enemy->y - enemy->height / 2;
 		enemies.push_back(enemy);
 		space->addDynamicActor(enemy);
+		break;
+	}
+	case 'I': {
+		Item* item = new Item(x, y, game);
+		// modificación para empezar a contar desde el suelo.
+		item->y = item->y - item->height / 2;
+		items.push_back(item);
+		space->addDynamicActor(item);
 		break;
 	}
 	case '1': {

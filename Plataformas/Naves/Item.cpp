@@ -5,8 +5,8 @@ Item::Item(float x, float y, Game* game) :Actor("res/icono_recolectable.png", x,
 		256, 40, 6, 8, true, game);
 }
 
-void Item::draw(float scrollX) {
-	animation->draw(x - scrollX, y);
+void Item::draw(float scrollX, float scrollY) {
+	animation->draw(x - scrollX, y - scrollY);
 }
 
 void Item::update() {

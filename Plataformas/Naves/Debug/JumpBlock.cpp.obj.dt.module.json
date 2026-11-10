@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "Debug\\JumpBlock.obj",
+            "outputs": [
+                "Debug\\JumpBlock.cpp.obj.dt.module.json",
+                "Debug\\JumpBlock.cpp.obj.dt.d.json"
+            ],
+            "requires": []
+        }
+    ]
+}

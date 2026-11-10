@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "Debug\\DestructibleTile.obj",
+            "outputs": [
+                "Debug\\DestructibleTile.h.obj.dt.module.json",
+                "Debug\\DestructibleTile.h.obj.dt.d.json"
+            ],
+            "requires": []
+        }
+    ]
+}

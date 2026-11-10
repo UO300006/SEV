@@ -47,6 +47,8 @@ void GameLayer::init() {
 	items.clear(); //Vaciar la lsita de items
 
 	jumpBlocks.clear(); //Vacias la lista de bloques de salto
+
+	destructibleTiles.clear();	//Vacia la lista de tiles destruibles
 	
 	loadMap("res/" + to_string(game->currentLevel) + ".txt");
 
@@ -261,10 +263,43 @@ void GameLayer::update() {
 	}
 
 
+
+	list<Projectile*> deleteProjectiles;
+	list<DestructibleTile*> deleteTiles;
+
+	// Colisiones Projectile - DestructibleTile
+	for (auto const& desTile : destructibleTiles) {
+		for (auto const& projectile : projectiles) {
+			if (desTile->isOverlap(projectile)) {
+				//Eliminar Projectile
+				bool pInList = std::find(deleteProjectiles.begin(),
+					deleteProjectiles.end(),
+					projectile) != deleteProjectiles.end();
+
+				if (!pInList) {
+					deleteProjectiles.push_back(projectile);
+				}
+
+				//Eliminar Tile
+				bool tInList = std::find(deleteTiles.begin(),
+					deleteTiles.end(),
+					desTile) != deleteTiles.end();
+
+				if (!tInList) {
+					deleteTiles.push_back(desTile);
+				}
+			}
+		}
+	}
+	for (auto const& delTile : deleteTiles) {
+		destructibleTiles.remove(delTile);
+		space->removeStaticActor(delTile);
+		delete delTile;
+	}
+
 	// Colisiones , Enemy - Projectile
 
 	list<Enemy*> deleteEnemies;
-	list<Projectile*> deleteProjectiles;
 
 	for (auto const& projectile : projectiles) {
 		if (projectile->isInRender(scrollX) == false || projectile->vx == 0) {
@@ -276,6 +311,7 @@ void GameLayer::update() {
 			if (!pInList) {
 				deleteProjectiles.push_back(projectile);
 			}
+
 		}
 	}
 
@@ -373,6 +409,10 @@ void GameLayer::draw() {
 		tile->draw(scrollX, scrollY);
 	}
 
+	for (auto const& desTile : destructibleTiles) {
+		desTile->draw(scrollX, scrollY);
+	}
+
 	for (auto const& projectile : projectiles) {
 		projectile->draw(scrollX, scrollY);
 	}
@@ -446,6 +486,14 @@ void GameLayer::loadMapObject(char character, float x, float y)
 		JumpBlock* jumpBlock = new JumpBlock(x, y, game);
 		jumpBlock->y = jumpBlock->y - jumpBlock->height / 2;
 		jumpBlocks.push_back(jumpBlock);
+		break;
+	}
+	case 'U': {
+		DestructibleTile* desTile = new DestructibleTile("res/bloque_fondo_muro.png", x, y, game);
+		// modificación para empezar a contar desde el suelo.
+		desTile->y = desTile->y - desTile->height / 2;
+		destructibleTiles.push_back(desTile);
+		space->addStaticActor(desTile);
 		break;
 	}
 	case 'C': {

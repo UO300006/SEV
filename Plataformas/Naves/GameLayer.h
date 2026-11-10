@@ -17,6 +17,7 @@
 #include "Pad.h"
 #include "Item.h"
 #include "JumpBlock.h"
+#include "DestructibleTile.h"
 
 class GameLayer : public Layer
 {
@@ -67,4 +68,5 @@ public:
 	list<Projectile*> projectiles;
 	list<Item*> items;
 	list<JumpBlock*> jumpBlocks;
+	list<DestructibleTile*> destructibleTiles;
 };

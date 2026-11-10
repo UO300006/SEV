@@ -177,3 +177,8 @@ void Player::loseLife() {
 	}
 }
 
+void Player::bounce() {
+	vy = -20;
+	onAir = true;
+	
+}

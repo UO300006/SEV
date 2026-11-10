@@ -45,6 +45,8 @@ void GameLayer::init() {
 	enemies.clear(); // Vaciar por si reiniciamos el juego
 
 	items.clear(); //Vaciar la lsita de items
+
+	jumpBlocks.clear(); //Vacias la lista de bloques de salto
 	
 	loadMap("res/" + to_string(game->currentLevel) + ".txt");
 
@@ -229,6 +231,13 @@ void GameLayer::update() {
 		item->update();
 	}
 
+	// Colisiones Jugador - JumpBlock
+	for (auto const& jumpBlock : jumpBlocks) {
+		if (player->isOverlap(jumpBlock)) {
+			player->bounce();
+		}
+	}
+
 	// Colisiones
 	for (auto const& enemy : enemies) {
 		if (player->isOverlap(enemy)) {
@@ -377,6 +386,11 @@ void GameLayer::draw() {
 	for (auto const& item : items) {
 		item->draw(scrollX, scrollY);
 	}
+
+	for (auto const& jumpBlock : jumpBlocks) {
+		jumpBlock->draw(scrollX, scrollY);
+	}
+
 	textPoints->draw();
 	textRecolectedItems->draw();
 	backgroundPoints->draw();
@@ -428,6 +442,12 @@ void GameLayer::loadMap(string name) {
 void GameLayer::loadMapObject(char character, float x, float y)
 {
 	switch (character) {
+	case 'Y': {
+		JumpBlock* jumpBlock = new JumpBlock(x, y, game);
+		jumpBlock->y = jumpBlock->y - jumpBlock->height / 2;
+		jumpBlocks.push_back(jumpBlock);
+		break;
+	}
 	case 'C': {
 		cup = new Tile("res/copa.png", x, y, game);
 		// modificación para empezar a contar desde el suelo.

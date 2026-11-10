@@ -16,6 +16,7 @@
 #include <list>
 #include "Pad.h"
 #include "Item.h"
+#include "JumpBlock.h"
 
 class GameLayer : public Layer
 {
@@ -65,4 +66,5 @@ public:
 	list<Enemy*> enemies;
 	list<Projectile*> projectiles;
 	list<Item*> items;
+	list<JumpBlock*> jumpBlocks;
 };

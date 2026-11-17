@@ -84,6 +84,9 @@
     <ClCompile Include="DestructibleTile.cpp">
       <Filter>Archivos de origen\Actores</Filter>
     </ClCompile>
+    <ClCompile Include="DisappearingTile.cpp">
+      <Filter>Archivos de origen\Actores</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h">
@@ -138,6 +141,9 @@
       <Filter>Archivos de encabezado\Actores</Filter>
     </ClInclude>
     <ClInclude Include="DestructibleTile.h">
+      <Filter>Archivos de encabezado\Actores</Filter>
+    </ClInclude>
+    <ClInclude Include="DisappearingTile.h">
       <Filter>Archivos de encabezado\Actores</Filter>
     </ClInclude>
   </ItemGroup>

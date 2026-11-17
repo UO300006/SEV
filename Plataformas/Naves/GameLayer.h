@@ -18,6 +18,7 @@
 #include "Item.h"
 #include "JumpBlock.h"
 #include "DestructibleTile.h"
+#include "DisappearingTile.h"
 
 class GameLayer : public Layer
 {
@@ -69,4 +70,7 @@ public:
 	list<Item*> items;
 	list<JumpBlock*> jumpBlocks;
 	list<DestructibleTile*> destructibleTiles;
+
+	list<DisappearingTile*> disappearingTiles;
+	bool playerStandsOn(Actor* tile);
 };

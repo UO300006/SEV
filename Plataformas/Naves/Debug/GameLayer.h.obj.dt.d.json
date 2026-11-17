@@ -287,7 +287,8 @@
             "c:\\users\\sonpe\\desktop\\universidad\\sev\\plataformas\\naves\\pad.h",
             "c:\\users\\sonpe\\desktop\\universidad\\sev\\plataformas\\naves\\item.h",
             "c:\\users\\sonpe\\desktop\\universidad\\sev\\plataformas\\naves\\jumpblock.h",
-            "c:\\users\\sonpe\\desktop\\universidad\\sev\\plataformas\\naves\\destructibletile.h"
+            "c:\\users\\sonpe\\desktop\\universidad\\sev\\plataformas\\naves\\destructibletile.h",
+            "c:\\users\\sonpe\\desktop\\universidad\\sev\\plataformas\\naves\\disappearingtile.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

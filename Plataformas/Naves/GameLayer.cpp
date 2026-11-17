@@ -49,6 +49,8 @@ void GameLayer::init() {
 	jumpBlocks.clear(); //Vacias la lista de bloques de salto
 
 	destructibleTiles.clear();	//Vacia la lista de tiles destruibles
+
+	disappearingTiles.clear();	//Vaciar la lista de tiles que desaparecen
 	
 	loadMap("res/" + to_string(game->currentLevel) + ".txt");
 
@@ -223,6 +225,19 @@ void GameLayer::update() {
 	background->update();
 
 	player->update();
+
+	list<DisappearingTile*> deleteDisappearing;
+	for (auto const& t : disappearingTiles) {
+		if (playerStandsOn(t)) t->trigger();
+		t->update();
+		if (t->isGone()) deleteDisappearing.push_back(t);
+	}
+	for (auto const& t : deleteDisappearing) {
+		disappearingTiles.remove(t);
+		space->removeStaticActor(t);   // el jugador cae solo: collisionDown pasa a false
+		delete t;
+	}
+
 	for (auto const& enemy : enemies) {
 		enemy->update();
 	}
@@ -413,6 +428,10 @@ void GameLayer::draw() {
 		desTile->draw(scrollX, scrollY);
 	}
 
+	for (auto const& t : disappearingTiles) {
+		t->draw(scrollX, scrollY);
+	}
+
 	for (auto const& projectile : projectiles) {
 		projectile->draw(scrollX, scrollY);
 	}
@@ -482,6 +501,13 @@ void GameLayer::loadMap(string name) {
 void GameLayer::loadMapObject(char character, float x, float y)
 {
 	switch (character) {
+	case 'W': {
+		DisappearingTile* tile = new DisappearingTile(x, y, game);
+		tile->y = tile->y - tile->height / 2;
+		disappearingTiles.push_back(tile);
+		space->addStaticActor(tile);
+		break;
+	}
 	case 'Y': {
 		JumpBlock* jumpBlock = new JumpBlock(x, y, game);
 		jumpBlock->y = jumpBlock->y - jumpBlock->height / 2;
@@ -636,5 +662,11 @@ void GameLayer::gamePadToControls(SDL_Event event) {
 	}
 }
 
-
-
+bool GameLayer::playerStandsOn(Actor* t) {
+	int feet = player->y + player->height / 2;
+	int top = t->y - t->height / 2;
+	bool sameX = player->x + player->width / 2 > t->x - t->width / 2
+		&& player->x - player->width / 2 < t->x + t->width / 2;
+	// Space::updateMoveDown deja downDynamic == topStatic exactamente
+	return player->collisionDown && sameX && feet == top;
+}

@@ -1,7 +1,7 @@
 #include "DisappearingTile.h"
 
 DisappearingTile::DisappearingTile(float x, float y, Game* game)
-	: Tile("res/bloque_tierra.png", x, y, game) {}
+	: Tile("res/bloque_tierra_desgastado.png", x, y, game) {}
 
 void DisappearingTile::trigger() {
 	if (!triggered) {            // solo la primera vez

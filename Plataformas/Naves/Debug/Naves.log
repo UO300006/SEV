@@ -1,11 +1,5 @@
 ﻿C:\Program Files\Microsoft Visual Studio\18\Community\MSBuild\Microsoft\VC\v180\Microsoft.CppBuild.targets(551,5): warning MSB8028: El directorio intermedio (Debug\) contiene archivos compartidos de otro proyecto (Naves.vcxproj). Esto puede dar lugar a un comportamiento incorrecto de limpieza y recompilación.
   DisappearingTile.cpp
-  Game.cpp
-C:\Users\sonpe\Desktop\Universidad\SEV\Plataformas\Naves\Audio.h(8,10): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
-  (compilando archivo de origen "Game.cpp")
-  
-C:\Users\sonpe\Desktop\Universidad\SEV\Plataformas\Naves\Game.cpp(67,56): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\sonpe\Desktop\Universidad\SEV\Plataformas\Naves\Game.cpp(67,35): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
   GameLayer.cpp
 C:\Users\sonpe\Desktop\Universidad\SEV\Plataformas\Naves\Audio.h(8,10): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
   (compilando archivo de origen "GameLayer.cpp")
@@ -41,5 +35,6 @@ C:\Users\sonpe\Desktop\Universidad\SEV\Plataformas\Naves\GameLayer.cpp(617,43): 
 C:\Users\sonpe\Desktop\Universidad\SEV\Plataformas\Naves\GameLayer.cpp(617,34): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
 C:\Users\sonpe\Desktop\Universidad\SEV\Plataformas\Naves\GameLayer.cpp(620,42): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
 C:\Users\sonpe\Desktop\Universidad\SEV\Plataformas\Naves\GameLayer.cpp(620,33): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+  JumpBlock.cpp
   Generando código...
   Naves.vcxproj -> C:\Users\sonpe\Desktop\Universidad\SEV\Plataformas\Debug\Plataformas.exe
